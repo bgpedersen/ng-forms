@@ -3,16 +3,18 @@ $blue: #1f88ff;
 .container {
   height: 100%;
   background-color: #eeeeee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 10px;
 }
 
 .card {
   display: grid;
-  grid-template-columns: minmax(400px, 1fr);
-  grid-template-rows: 1fr 4fr;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  grid-template-rows: auto 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   .card-header {
     background-color: #fff;
     border-top: 1px solid $blue;
@@ -32,3 +34,7 @@ $blue: #1f88ff;
     border-right: 1px solid grey;
   }
 }
+
+// css box shadow https://www.w3schools.com/css/css3_shadows.asp
+// angular forms https://angular.io/start/forms
+// angular book file:///C:/Users/bruger/Google%20Drev/Coding/Angular2+/NG-Book2/ng-book2-book-angular-8-r74.pdf
