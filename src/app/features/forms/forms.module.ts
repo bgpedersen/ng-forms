@@ -1,5 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSliderModule } from '@angular/material/slider';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -9,6 +12,15 @@ import { ReactiveformComponent } from './pages/reactiveform/reactiveform.compone
 
 @NgModule({
   declarations: [FormsComponent, ReactiveformComponent],
-  imports: [CommonModule, FormsRoutingModule, RouterModule, SharedModule]
+  imports: [
+    CommonModule,
+    FormsRoutingModule,
+    RouterModule,
+    SharedModule,
+    MatFormFieldModule,
+    MatSliderModule,
+    MatInputModule
+    // MatButtonModule
+  ]
 })
 export class FormsModule {}

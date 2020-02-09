@@ -4,7 +4,26 @@
       Reactive Forms
     </div>
     <div class="card-body">
-      Description
+      <!-- <form (submit)="formSubmit($event)">
+        <mat-form-field>
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Ex. Pizza" value="Sushi" />
+        </mat-form-field>
+      </form> -->
+
+      <form class="form-md">
+        <div class="form-group">
+          <!-- <app-shared-input></app-shared-input> -->
+          <input
+            id="form_name1"
+            class="form-control"
+            type="text"
+            placeholder="Ex. Jens"
+            required
+          />
+          <label for="form_name1">Firstname</label>
+        </div>
+      </form>
     </div>
   </div>
   <div class="card">
