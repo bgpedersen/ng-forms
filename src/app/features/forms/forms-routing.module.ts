@@ -6,15 +6,15 @@ import { ReactiveformComponent } from './pages/reactiveform/reactiveform.compone
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: FormsComponent,
     children: [
       {
-        path: "reactiveform",
+        path: 'reactiveform',
         component: ReactiveformComponent
       },
       {
-        path: "**",
+        path: '**',
         component: ReactiveformComponent
       }
     ]

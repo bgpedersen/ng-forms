@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-reactiveform',
@@ -9,12 +9,12 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class ReactiveformComponent implements OnInit {
   checkoutForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.checkoutForm = this.formBuilder.group({
-      name: '',
-      address: ''
-    });
-  }
+  // constructor(private formBuilder: FormBuilder) {
+  // this.checkoutForm = this.formBuilder.group({
+  //   name: '',
+  //   address: ''
+  // });
+  // }
 
   ngOnInit(): void {}
 }

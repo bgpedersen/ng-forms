@@ -3,13 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "forms",
+    path: 'forms',
     loadChildren: () =>
-      import("./features/forms/forms.module").then(m => m.FormsModule)
+      import('./features/forms/forms.module').then(m => m.FormsModule)
   },
+  { path: '', redirectTo: '/forms', pathMatch: 'full' },
   {
-    path: "**",
-    redirectTo: "forms"
+    path: '**',
+    redirectTo: 'forms'
   }
 ];
 
