@@ -5,7 +5,7 @@ $blue: #1f88ff;
   background-color: #eeeeee;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: auto;
+  grid-auto-rows: minmax(100px, min-content);
   column-gap: 20px;
   row-gap: 20px;
   padding: 10px;
@@ -13,8 +13,8 @@ $blue: #1f88ff;
 
 .card {
   display: grid;
-  grid-template-rows: auto 1fr;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  grid-template-rows: min-content min-content;
+
   .card-header {
     background-color: #fff;
     border-top: 1px solid $blue;
@@ -32,6 +32,7 @@ $blue: #1f88ff;
     border-left: 1px solid grey;
     border-bottom: 1px solid grey;
     border-right: 1px solid grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
