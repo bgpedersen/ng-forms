@@ -11,18 +11,29 @@
         </mat-form-field>
       </form> -->
 
-      <form class="form-md">
-        <div class="form-group">
-          <!-- <app-shared-input></app-shared-input> -->
+      <!-- Currently https://blog.angular-university.io/angular-ng-content/#interactingwithprojectedcontentinsidengcontent -->
+      <form>
+        <app-shared-input>
           <input
+            input
             id="form_name1"
-            class="form-control"
             type="text"
-            placeholder="Ex. Jens"
+            placeholder="ex. Jens"
             required
           />
-          <label for="form_name1">Firstname</label>
-        </div>
+          <label label for="form_name1">Firstname</label>
+        </app-shared-input>
+
+        <app-shared-input>
+          <input
+            input
+            id="form_name2"
+            type="tel"
+            step="1"
+            placeholder="ex. 54565522"
+          />
+          <label label for="form_name2">Telephone</label>
+        </app-shared-input>
       </form>
     </div>
   </div>
